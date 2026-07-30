@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HRMS | Human Resource Management System</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:'Poppins',sans-serif;
+    }
+
+    body{
+      background:#0f172a;
+      color:#fff;
+    }
+
+    header{
+      background:linear-gradient(135deg,#2563eb,#7c3aed);
+      padding:80px 20px;
+      text-align:center;
+    }
+
+    header h1{
+      font-size:55px;
+      margin-bottom:15px;
+    }
+
+    header p{
+      max-width:700px;
+      margin:auto;
+      opacity:.9;
+      line-height:1.8;
+    }
+
+    .btn{
+      display:inline-block;
+      margin-top:30px;
+      padding:14px 28px;
+      background:#fff;
+      color:#2563eb;
+      text-decoration:none;
+      border-radius:8px;
+      font-weight:600;
+      transition:.3s;
+    }
+
+    .btn:hover{
+      transform:translateY(-3px);
+    }
+
+    section{
+      max-width:1200px;
+      margin:auto;
+      padding:70px 20px;
+    }
+
+    h2{
+      text-align:center;
+      margin-bottom:40px;
+      font-size:35px;
+    }
+
+    .grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+      gap:25px;
+    }
+
+    .card{
+      background:#1e293b;
+      border-radius:12px;
+      padding:25px;
+      transition:.3s;
+      border:1px solid rgba(255,255,255,.08);
+    }
+
+    .card:hover{
+      transform:translateY(-6px);
+    }
+
+    .card h3{
+      color:#60a5fa;
+      margin-bottom:15px;
+    }
+
+    .card ul{
+      padding-left:18px;
+      line-height:1.9;
+    }
+
+    .tech{
+      display:flex;
+      flex-wrap:wrap;
+      justify-content:center;
+      gap:15px;
+    }
+
+    .badge{
+      background:#2563eb;
+      padding:12px 18px;
+      border-radius:30px;
+      font-weight:500;
+    }
+
+    table{
+      width:100%;
+      border-collapse:collapse;
+      margin-top:25px;
+    }
+
+    th,td{
+      border:1px solid rgba(255,255,255,.1);
+      padding:15px;
+      text-align:left;
+    }
+
+    th{
+      background:#2563eb;
+    }
+
+    footer{
+      background:#020617;
+      padding:40px;
+      text-align:center;
+      color:#94a3b8;
+    }
+
+    @media(max-width:768px){
+      header h1{
+        font-size:38px;
+      }
+
+      h2{
+        font-size:28px;
+      }
+    }
+  </style>
+
+</head>
+<body>
+
+<header>
+
+<h1>🏢 HRMS</h1>
+
+<p>
+A modern Human Resource Management System built using React, Vite and Tailwind CSS.
+This project provides a complete solution for employee management, recruitment,
+payroll, project management, reports and administration.
+</p>
+
+<a href="https://github.com/shivek-yadav/HRM-System" class="btn">
+View GitHub Repository
+</a>
+
+</header>
+
+<section>
+
+<h2>Project Modules</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>📊 Dashboard</h3>
+<ul>
+<li>Analytics</li>
+<li>Overview Cards</li>
+<li>Charts</li>
+<li>Recent Activities</li>
+<li>Announcements</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>👨‍💼 Employee Management</h3>
+<ul>
+<li>Employees</li>
+<li>Attendance</li>
+<li>Leaves</li>
+<li>Departments</li>
+<li>Designations</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>🎯 Recruitment</h3>
+<ul>
+<li>Jobs</li>
+<li>Candidates</li>
+<li>Resume Upload</li>
+<li>Interview</li>
+<li>Hiring Pipeline</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>💰 Payroll</h3>
+<ul>
+<li>Salary</li>
+<li>Payslips</li>
+<li>Bonuses</li>
+<li>Deductions</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>📁 Projects</h3>
+<ul>
+<li>Projects</li>
+<li>Tasks</li>
+<li>Kanban Board</li>
+<li>Team Members</li>
+</ul>
+</div>
+
+<div class="card">
+<h3>⚙ Administration</h3>
+<ul>
+<li>Roles</li>
+<li>Permissions</li>
+<li>Settings</li>
+<li>Reports</li>
+</ul>
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<h2>Technology Stack</h2>
+
+<div class="tech">
+
+<div class="badge">React</div>
+<div class="badge">Vite</div>
+<div class="badge">Tailwind CSS</div>
+<div class="badge">React Router</div>
+<div class="badge">Axios</div>
+<div class="badge">JavaScript</div>
+
+</div>
+
+</section>
+
+<section>
+
+<h2>Development Team</h2>
+
+<table>
+
+<tr>
+<th>Developer</th>
+<th>Responsibility</th>
+</tr>
+
+<tr>
+<td>Shivek Yadav</td>
+<td>Dashboard • Shared Components • Final Integration</td>
+</tr>
+
+<tr>
+<td>Himanshu</td>
+<td>Employee Management</td>
+</tr>
+
+<tr>
+<td>Vishal Kumar</td>
+<td>Recruitment • Payroll</td>
+</tr>
+
+<tr>
+<td>Arish Kumar</td>
+<td>Projects • Reports • Administration</td>
+</tr>
+
+</table>
+
+</section>
+
+<section>
+
+<h2>Current Status</h2>
+
+<div class="card" style="text-align:center">
+
+<h3>🚧 Project Under Development</h3>
+
+<p style="margin-top:20px;line-height:1.8">
+This HRMS application is currently under active development.
+The frontend modules are being implemented, followed by backend APIs,
+authentication, database integration and deployment.
+</p>
+
+</div>
+
+</section>
+
+<footer>
+
+<h3>Thank You ❤️</h3>
+
+<p style="margin-top:15px">
+Thank you for visiting our project. We appreciate your interest and support.
+If you like this project, please consider giving it a ⭐ on GitHub.
+</p>
+
+<p style="margin-top:25px">
+© 2026 HRMS Team • Built with React & Tailwind CSS
+</p>
+
+</footer>
+
+</body>
+</html>
